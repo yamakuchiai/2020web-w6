@@ -33,7 +33,7 @@
   <script>
     'use strict';
 
-    const num = 5;
+    const num = 15;
     const winner = Math.floor(Math.random() * num); // 0 - 4
 
     for (let i = 0; i < num; i++) {
@@ -42,10 +42,10 @@
       
       div.addEventListener('click', () => {
         if (i === winner) {
-          div.textContent = 'Win!';
+          div.textContent = '大吉!';
           div.classList.add('win');
         } else {
-          div.textContent = 'Lose!';
+          div.textContent = '中吉!';
           div.classList.add('lose');
         }
       });
